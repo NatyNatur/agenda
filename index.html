@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agenda</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!-- ¡¡¡Recordar enlazar la fuente de los íconos!!! -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Enlazo jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav> <!-- Barra de navegación -->
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Lista de Contactos</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="btn modal-trigger" href="#modaladd"><i class="material-icons">add</i></a></li>
+        <li><a class="btn" href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="collapsible.html">jQuery</a></li>
+      </ul>
+    </div>
+  </nav>
+	</header>
+
+<!-- Modal Structure -->
+  <div id="modaladd" class="modal">
+    <div class="modal-content">
+      <h4>Contactos</h4>
+			<div class="row entries">
+				<form class="col s12">
+			    <div class="row">
+			       <div class="input-field col s6">
+			         <i class="material-icons prefix">account_circle</i>
+			         <input id="icon_prefix" type="text" class="validate">
+			         <label for="icon_prefix">Nombre</label>
+			       </div>
+			       <div class="input-field col s6">
+			         <i class="material-icons prefix">phone</i>
+			         <input id="icon_telephone" type="tel" class="validate" placeholder="10 dígitos">
+			         <label for="icon_telephone">Teléfono</label>
+			       </div>
+			     </div>
+			     <div class="row">
+			       <div class="modal-footer">
+      			   <a href="#!" class="modal-action modal-close waves-effect waves-green btn disabled left">Agregar</a>
+      			 </div>
+			     </div>
+			   </form>
+		  </div>
+    </div>
+  </div>
+<!-- archivos JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
